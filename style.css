@@ -1,0 +1,137 @@
+body{
+    background-color: #222831;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: white;
+    margin: 10% 25% 10% 25%;
+    padding: 10px;
+    border-radius: 20px;
+    
+}
+
+.container-1{
+    display: flex;
+    flex-direction: column;
+    margin: 15px;
+    margin-bottom: 20px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;  
+    font-size: 15px; 
+    line-height: 20px;
+}
+
+.head{
+    font-size: large;
+}
+
+.img{
+    height: 500px;
+    max-width: 500px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.button{
+    margin-top: 10px;
+}
+
+.btn{
+    padding: 10px;
+    width: 100%;
+    max-width: 263px;
+    border-radius: 5px;
+    color: #fff;
+    background-color: #FA7070;
+    border:0px;
+    text-align: center;
+}
+
+.btn:hover{
+   background-color: #FF204E;
+}
+
+.input{
+    padding: 10px;
+    padding-right: 80px;
+    border-radius: 5px;
+    border: 1px solid #31363F;
+}
+
+.email{
+    font-size: small;
+    display: flex;
+    justify-content: space-between;
+}
+
+.invalid-email{
+    color: red;
+    display: none;
+}
+
+.invalid-email-active{
+    display: block;
+}
+
+.input-error{
+    padding: 10px;
+    padding-right: 80px;
+    border-radius: 5px;
+    border: 1px solid red;
+    background-color: lightcoral;
+}
+
+.card{
+    display:none;
+}
+
+.cardActive{
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    margin: 15% 35%;
+    padding: 30px;
+    border-radius: 20px;   
+}
+
+@media(max-width : 800px){
+    .container{
+        display: flex;
+        flex-direction: column-reverse;
+        margin : 5% 10%;
+        
+    }
+
+    .img{
+        height: 200px;
+        max-width: 800px;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .container-1{
+        line-height: 35px;
+    }
+
+    .btn{
+        width: 233px;
+    }
+
+    .input{
+        padding-right: 50px;
+    }
+
+    .card-active{
+        display: block;
+        background-color: #fff;
+        padding: 30px;   
+    }
+
+    .card{
+        display:none;
+    }
+}
